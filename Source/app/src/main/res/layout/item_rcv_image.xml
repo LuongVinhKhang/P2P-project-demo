@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yongkang.layout.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="100dp">
+
+    <ImageView
+        android:id="@+id/item_rcv_image_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@mipmap/ic_launcher_round" />
+
+
+    <RelativeLayout
+        android:id="@+id/item_rcv_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_rcv_image_image"
+        android:background="@color/transparent_">
+
+        <TextView
+            android:id="@+id/item_rcv_image_text_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/item_rcv_image_check"
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/item_rcv_image_layout"
+
+        android:clickable="false" />
+
+
+</com.yongkang.layout.SquareRelativeLayout>
